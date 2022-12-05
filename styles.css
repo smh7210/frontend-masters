@@ -84,8 +84,7 @@ ul {
 .pricing {
   margin-top: 50px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
 }
 
 .toggle {
@@ -97,11 +96,12 @@ ul {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 20px;
+  align-self: center;
 }
 
 .toggle-items ul {
   display: flex;
-  justify-content: ;
+  justify-content: center;
   align-items: center;
   gap: 20px;
 }
@@ -119,4 +119,12 @@ ul {
   border-radius: 40px;
   height: 48px;
   width: 139px;
+}
+
+.pricing-item {
+  align-self: center;
+  background: #000;
+  width: 320px;
+  padding: 10px 20px;
+  border-top: 10px solid #3e3e3e;
 }
