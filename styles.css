@@ -69,6 +69,7 @@ ul {
 .main-content {
   background-color: #222;
   color: #e6e6e6;
+  padding-bottom: 50px;
 }
 
 .main-content .hero-banner {
@@ -121,24 +122,68 @@ ul {
   width: 139px;
 }
 
+.columns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
 .pricing-item {
   align-self: center;
   background: #000;
   width: 320px;
-  padding: 10px 20px;
+  padding: 10px 20px 0;
   border-top: 10px solid #3e3e3e;
   position: relative;
+  box-shadow: 0 5px 10px 0 rgb(0 0 0 / 20%);
 }
 
 .pricing-item .detail {
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.pricing-item .detail h3 {
+  font-size: 27px;
+  margin-bottom: 5px;
+}
+
+.pricing-item .detail .price {
+  font-weight: thin;
+  letter-spacing: 0.02em;
+}
+
+.note {
+  color: #888;
+  font-size: 14px;
+  font-weight: 100;
+  letter-spacing: 0.02em;
+}
+
+.description {
+  margin: 16px 0;
+  /* height: 72px; */
+}
+
+.savings-note {
+  background: #e66225;
+  border: 12px solid #e66225;
+  border-left: 6px solid #000;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  line-height: 1px;
+  padding-left: 8px;
+  position: absolute;
+  right: -3px;
+  top: 15px;
 }
 
 .pricing .btn-price {
   align-self: center;
-
-  margin: 20px 20px;
+  margin: 20px 20px 0;
   background: #c02d28;
   border: none;
   border-radius: 40px;
@@ -148,4 +193,22 @@ ul {
   padding: 10px 20px;
   text-align: center;
   width: 320px;
+}
+
+.features {
+  background: #3e3e3e;
+  width: 320px;
+  align-self: center;
+  margin: 0;
+  padding: 20px 20px 20px 35px;
+}
+
+.features ul {
+  list-style-type: disc;
+  color: #ccc;
+  font-size: 14px;
+}
+
+.features ul li {
+  padding: 0 0 4px;
 }
